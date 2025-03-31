@@ -79,25 +79,32 @@ export default withMermaid(
 
     // https://vitepress.dev/reference/default-theme-config
     themeConfig: {
-      nav,
-      sidebar,
+        nav,
+        sidebar,
 
-      logo: '/logo.svg',
-      siteTitle: false,
+        logo: '/logo.svg',
+        siteTitle: false,
 
-      outline: 'deep',
+        outline: 'deep',
 
-      search: {
-        provider: 'local',
-      },
+        search: {
+          provider: 'local',
+        },
 
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/CrudelisDeus', },
-      ],
+        appearance: 'dark',
 
-      navigationLinks: [
-        { icon: 'github', link: 'https://github.com/CrudelisDeus', text: 'GitHub', },
-      ],
+        footer: {
+          message: 'Released under the MIT License.',
+          copyright: 'Copyright © 2025-present Dmitry Shvydenko'
+        },
+
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/CrudelisDeus', },
+        ],
+
+        navigationLinks: [
+          { icon: 'github', link: 'https://github.com/CrudelisDeus', text: 'GitHub', },
+        ],
     },
   })
 );

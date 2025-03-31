@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: Docs
+  name: Deus
   text: Заметки
 #  tagline: заметки
   image: /logo-short.svg
@@ -16,10 +16,10 @@ hero:
       link: |
         https://www.linkedin.com/in/dmitry-shvydenko-4a88b5244/
 
-#features:
-#  - icon: 🐺
-#    title: PET
-#    link: /pet/
+features:
+  - icon: 🐺
+    title: PET
+    link: /pet/
 # - icon: 🪟
 #   title: Windows
 #   link: /windows/
