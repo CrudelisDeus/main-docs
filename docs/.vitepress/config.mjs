@@ -50,7 +50,7 @@ const { nav, sidebar } = navigation(
 
 export default withMermaid(
   defineConfig({
-    base: '/',
+    base: '/main-docs/',
 
     title: "Docs",
     description: "DevOps docs",
