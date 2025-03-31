@@ -16,10 +16,10 @@ const { nav, sidebar } = navigation(
       4) інші необов'язкові ключі (activeMatch, target...) описані тут - https://vitepress.dev/reference/default-theme-nav#navigation-links
   */
   [
-    {
-      text: 'PET',
-      folder: 'pet',
-    },
+    // {
+    //   text: 'PET',
+    //   folder: 'pet',
+    // },
   ],
   /*
     Другий параметр функції (НЕобов'язковий) - об'єкт з двома ключами:
