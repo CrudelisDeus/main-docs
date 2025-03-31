@@ -75,6 +75,10 @@ export default withMermaid(
     head: [
       ['script', { src: 'https://cdn.tailwindcss.com' }],
       ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
+        ['script', {}, `
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('vitepress-theme-appearance', 'dark');
+  `]
     ],
 
     // https://vitepress.dev/reference/default-theme-config
@@ -90,8 +94,6 @@ export default withMermaid(
         search: {
           provider: 'local',
         },
-
-        appearance: 'dark',
 
         footer: {
           message: 'Released under the MIT License',
