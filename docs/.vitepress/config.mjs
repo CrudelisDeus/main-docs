@@ -94,7 +94,7 @@ export default withMermaid(
         appearance: 'dark',
 
         footer: {
-          message: 'Released under the MIT License.',
+          message: 'Released under the MIT License',
           copyright: 'Copyright © 2025-present Dmitry Shvydenko'
         },
 
