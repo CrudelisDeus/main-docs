@@ -52,8 +52,8 @@ export default withMermaid(
   defineConfig({
     base: '/main-docs/',
 
-    title: "Docs",
-    description: "DevOps docs",
+    title: "Notes",
+    description: "",
 
     ignoreDeadLinks: true,
 
