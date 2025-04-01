@@ -17,7 +17,7 @@ const { nav, sidebar } = navigation(
   */
   [
     {
-      text: 'Про меня',
+      text: 'About me',
       folder: 'pet',
     },
   ],
@@ -31,8 +31,8 @@ const { nav, sidebar } = navigation(
   */
   {
     nav: {
-      disableHome: false,
-      homeTitle: 'Главная',
+        disableHome: true,
+        homeTitle: 'Home',
     },
     // sidebar: {
     //   'api': {

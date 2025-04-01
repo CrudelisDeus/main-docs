@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: Deus
-  text: Заметки
+  text: Notes
 #  tagline: заметки
   image: /logo-doc.gif
   actions:
@@ -19,7 +19,7 @@ hero:
 features:
   - icon: 🐺
     title: |
-      PET проекты
+      PET project
     link: /pet/
 # - icon: 🪟
 #   title: Windows
