@@ -6,7 +6,7 @@ hero:
   name: Deus
   text: Заметки
 #  tagline: заметки
-  image: /3.gif
+  image: /logo-doc.gif
   actions:
     - theme: brand
       text: GitHub
