@@ -161,3 +161,8 @@
   color: #bb2d3b;
   background-color: rgba(220, 53, 69, 0.15);
 }
+
+// скрыть переключение цветов
+.VPNavBarAppearance {
+  display: none !important;
+}
