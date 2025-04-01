@@ -16,10 +16,10 @@ const { nav, sidebar } = navigation(
       4) інші необов'язкові ключі (activeMatch, target...) описані тут - https://vitepress.dev/reference/default-theme-nav#navigation-links
   */
   [
-    // {
-    //   text: 'PET',
-    //   folder: 'pet',
-    // },
+    {
+      text: 'Про меня',
+      folder: 'pet',
+    },
   ],
   /*
     Другий параметр функції (НЕобов'язковий) - об'єкт з двома ключами:
@@ -73,13 +73,10 @@ export default withMermaid(
     },
 
     head: [
-      ['script', { src: 'https://cdn.tailwindcss.com' }],
-      ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
-        ['script', {}, `
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('vitepress-theme-appearance', 'dark');
-  `]
-    ],
+        ['script', { src: 'https://cdn.tailwindcss.com' }],
+        ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
+        ['script', {}, `document.documentElement.classList.add('dark');
+        localStorage.setItem('vitepress-theme-appearance', 'dark');`]],
 
     // https://vitepress.dev/reference/default-theme-config
     themeConfig: {

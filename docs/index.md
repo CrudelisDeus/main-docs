@@ -16,10 +16,11 @@ hero:
       link: |
         https://www.linkedin.com/in/dmitry-shvydenko-4a88b5244/
 
-#features:
-#  - icon: 🐺
-#    title: PET
-#    link: /pet/
+features:
+  - icon: 🐺
+    title: |
+      PET проекты
+    link: /pet/
 # - icon: 🪟
 #   title: Windows
 #   link: /windows/
