@@ -17,10 +17,12 @@ hero:
         https://www.linkedin.com/in/dmitry-shvydenko-4a88b5244/
 
 features:
-  - icon: 🐺
+  - icon: 
+      src: ./logo-short.svg
     title: |
       PET project
     link: /pet/
+    
 # - icon: 🪟
 #   title: Windows
 #   link: /windows/

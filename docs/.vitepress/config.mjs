@@ -83,6 +83,8 @@ export default withMermaid(
         nav,
         sidebar,
 
+        appearance: false,
+
         logo: '/logo-short.svg',
         siteTitle: 'DeuSoft',
 
