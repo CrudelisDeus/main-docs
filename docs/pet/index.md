@@ -23,3 +23,9 @@ Devops engineer
 | 2023-2025 | Магистр             | 122 Компьютерные науки |
 | 2021-2023 | Бакалавр            | 123 Системный анализ   |
 | 2017-2021 | Среднее-специальное | 122 Компьютерные науки |
+
+## CV
+
+<a href="./img/index/cv_en.pdf" download>English</a>
+
+<a href="./img/index/cv_uk.pdf" download>Ukraine</a>
