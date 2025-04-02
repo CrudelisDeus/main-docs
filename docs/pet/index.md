@@ -7,6 +7,7 @@ Devops engineer
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="./img/index/gitlab.svg" alt="GitLab" width="50" height="50">
     <img src="./img/index/ansible.svg" alt="Ansible" width="50" height="50">
+    <img src="./img/index/linux.svg" alt="Linux" width="50" height="50">
     <img src="./img/index/python.svg" alt="Python" width="50" height="50">
     <img src="./img/index/docker.svg" alt="Docker" width="50" height="50">
 </div>
@@ -32,6 +33,10 @@ Devops engineer
 | Monitoring     | Prometheus, Grafana, Zabbix        |
 | OS            | Linux                                |
 | Languages      | Python, Bash, C/C++                |
+
+## Certificate
+
+![](./img/index/cert-1.jpg)
 
 ## CV
 
