@@ -4,6 +4,14 @@
 
 Devops engineer
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="./img/index/gitlab.svg" alt="GitLab" width="50" height="50">
+    <img src="./img/index/ansible.svg" alt="Ansible" width="50" height="50">
+    <img src="./img/index/python.svg" alt="Python" width="50" height="50">
+    <img src="./img/index/docker.svg" alt="Docker" width="50" height="50">
+</div>
+
+
 ## Education
 
 | Years      | Degree                  | Field                |
