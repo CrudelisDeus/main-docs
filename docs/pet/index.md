@@ -1,4 +1,4 @@
-![](./img/index/logo.svg)
+![](./img/index/logo.png)
 
 # Dmitry Shvydenko
 
