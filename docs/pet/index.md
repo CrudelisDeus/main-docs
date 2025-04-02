@@ -10,9 +10,20 @@ Devops engineer
     <img src="./img/index/linux.svg" alt="Linux" width="50" height="50">
     <img src="./img/index/python.svg" alt="Python" width="50" height="50">
     <img src="./img/index/docker.svg" alt="Docker" width="50" height="50">
+    <img src="./img/index/grafana.svg" alt="Grafana" width="50" height="50">
 </div>
 
+```python
+class DevOpsEngineer:
+    def __init__(self, name):
+        self.name = name
 
+    def work(self):
+        return f"{self.name} automates everything!"  # [!code focus]
+
+me = DevOpsEngineer("Dmitry Shvydenko")
+print(me.work())
+```
 ## Education
 
 | Years      | Degree                  | Field                |
