@@ -81,13 +81,14 @@ export default withMermaid(
 
       ['script', {
         async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-99M10ZF9GL'
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-RSRSDPR16' // Используйте ваш реальный ID
       }],
       ['script', {}, `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-99M10ZF9GL');`],
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RSRSDPR16'); // Используйте ваш реальный ID
+      `],
 
       ['meta', { name: 'robots', content: 'index, follow' }],
       ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
@@ -96,7 +97,6 @@ gtag('config', 'G-99M10ZF9GL');`],
         localStorage.setItem('vitepress-theme-appearance', 'dark');
       `]
     ],
-
     // https://vitepress.dev/reference/default-theme-config
     themeConfig: {
         nav,
