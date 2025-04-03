@@ -78,18 +78,13 @@ export default withMermaid(
 
     head: [
       ['script', { src: 'https://cdn.tailwindcss.com' }],
-
-      ['script', {
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-858GSPPL6'
-      }],
-      ['script', {}, `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-858GSPPL6');
-      `],
-
+        ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-R5RGSPP6L6' }],
+        ['script', {}, `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-R5RGSPP6L6');
+        `],
       ['meta', { name: 'robots', content: 'index, follow' }],
       ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
       ['script', {}, `
