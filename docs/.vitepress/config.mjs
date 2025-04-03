@@ -81,14 +81,13 @@ export default withMermaid(
 
       ['script', {
         async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-858GSPPL6'
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-99M10ZF9GL'
       }],
       ['script', {}, `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-858GSPPL6');
-      `],
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-99M10ZF9GL');`],
 
       ['meta', { name: 'robots', content: 'index, follow' }],
       ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
