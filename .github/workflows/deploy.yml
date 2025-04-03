@@ -22,7 +22,7 @@ jobs:
         with:
           name: pages-artifact
           path: docs/.vitepress/dist
-        continue-on-error: true  # Продолжаем если артефакта нет (первый запуск)
+        continue-on-error: true
 
       - name: nodejs
         uses: actions/setup-node@v4
@@ -34,12 +34,12 @@ jobs:
         run: npm install
 
       - name: build
-        run: npm run docs:build  # Новый билд поверх предыдущего
+        run: npm run docs:build
 
       - name: upload
         uses: actions/upload-pages-artifact@v3
         with:
-          name: pages-artifact  # Явно указываем имя для последующего скачивания
+          name: pages-artifact
           path: docs/.vitepress/dist
 
   deploy:
