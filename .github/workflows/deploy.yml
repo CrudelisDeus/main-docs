@@ -1,47 +1,17 @@
-name: Doc to GitHub Pages
+deploy:
+  runs-on: ubuntu-latest
+  needs: build
+  environment:
+    name: docs
+    url: ${{ steps.deployment.outputs.page_url }}
 
-on:
-  push:
-    branches:
-      - main
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    - name: Create redirect index.html
+      run: echo '<meta http-equiv="refresh" content="0; url=https://deus-soft.com/">' > docs/.vitepress/dist/index.html
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout rep
-        uses: actions/checkout@v4
-
-      - name: nodejs
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
-
-      - name: dep i
-        run: npm install
-
-      - name: build
-        run: npm run docs:build
-
-      - name: upload
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/.vitepress/dist
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: docs
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Doc to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
