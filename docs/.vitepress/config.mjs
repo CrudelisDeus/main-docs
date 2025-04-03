@@ -88,10 +88,7 @@ export default withMermaid(
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-R5RGSPP6L6', { 
-          debug_mode: true,
-          send_page_view: true
-        });
+        gtag('config', 'G-R5RGSPP6L6');
       `],
 
       ['meta', { name: 'robots', content: 'index, follow' }],
