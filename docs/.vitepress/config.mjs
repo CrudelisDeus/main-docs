@@ -78,26 +78,24 @@ export default withMermaid(
     },
 
     head: [
-      ['script', { src: 'https://cdn.tailwindcss.com' }],
-
-      ['script', {
-        async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-R5RGSPP6L6'
-      }],
-      ['script', {}, `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-R5RGSPP6L6');
-      `],
-
-      ['meta', { name: 'robots', content: 'index, follow' }],
-      ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
-      ['script', {}, `
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('vitepress-theme-appearance', 'dark');
-      `]
-    ],
+        ['script', { src: 'https://cdn.tailwindcss.com' }],
+        ['meta', { name: 'robots', content: 'index, follow' }],
+        ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
+        ['script', {}, `
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('vitepress-theme-appearance', 'dark');
+        `],
+        ['script', {
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-R5RGSPP6L6'
+        }],
+        ['script', {}, `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-R5RGSPP6L6', { debug_mode: true });
+        `]
+      ],
     // https://vitepress.dev/reference/default-theme-config
     themeConfig: {
         nav,
