@@ -14,22 +14,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout rep
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: nodejs
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"
 
-      - name: dep i
+      - name: Install dependencies
         run: npm install
 
-      - name: build
+      - name: Download previous build (if exists)
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
+          path: docs/.vitepress/dist
+
+      - name: Build docs
         run: npm run docs:build
 
-      - name: upload
+      - name: Sync with previous build
+        run: rsync -av --delete docs/.vitepress/dist/ docs/.vitepress/dist/
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
@@ -42,6 +51,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Doc to GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
