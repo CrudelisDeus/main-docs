@@ -26,8 +26,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Download previous build (if exists)
-        uses: actions/download-artifact@v3
+      - name: Try to download previous build
+        uses: actions/download-artifact@v4
         with:
           name: github-pages
           path: docs/.vitepress/dist
@@ -35,10 +35,7 @@ jobs:
       - name: Build docs
         run: npm run docs:build
 
-      - name: Sync with previous build
-        run: rsync -av --delete docs/.vitepress/dist/ docs/.vitepress/dist/
-
-      - name: Upload artifact
+      - name: Upload new artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
