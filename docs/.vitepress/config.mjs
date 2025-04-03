@@ -76,6 +76,7 @@ export default withMermaid(
 
     head: [
         ['script', { src: 'https://cdn.tailwindcss.com' }],
+        ['meta', { name: 'robots', content: 'index, follow' }],
         ['link', { rel: 'icon shortcut', href: './logo-short.svg' }],
         ['script', {}, `document.documentElement.classList.add('dark');
         localStorage.setItem('vitepress-theme-appearance', 'dark');`]],
