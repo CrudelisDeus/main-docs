@@ -51,7 +51,9 @@ const { nav, sidebar } = navigation(
 export default withMermaid(
   defineConfig({
     base: '/main-docs/',
-
+      sitemap: {
+        hostname: 'https://github.com/CrudelisDeus/main-docs'
+      },
     title: "Notes",
     description: "",
 
