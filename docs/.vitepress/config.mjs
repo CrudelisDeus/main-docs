@@ -81,13 +81,16 @@ export default withMermaid(
 
       ['script', {
         async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-RSRSDPR16' // Используйте ваш реальный ID
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-R5RGSPP6L6'
       }],
       ['script', {}, `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-RSRSDPR16'); // Используйте ваш реальный ID
+        gtag('config', 'G-R5RGSPP6L6', { 
+          debug_mode: true,
+          send_page_view: true
+        });
       `],
 
       ['meta', { name: 'robots', content: 'index, follow' }],
