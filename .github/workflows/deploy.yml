@@ -14,8 +14,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout rep
+      - name: checkout repo
         uses: actions/checkout@v4
+
+      - name: Download previous artifact (if exists)
+        uses: actions/download-artifact@v4
+        with:
+          name: pages-artifact
+          path: docs/.vitepress/dist
+        continue-on-error: true  # Продолжаем если артефакта нет (первый запуск)
 
       - name: nodejs
         uses: actions/setup-node@v4
@@ -27,11 +34,12 @@ jobs:
         run: npm install
 
       - name: build
-        run: npm run docs:build
+        run: npm run docs:build  # Новый билд поверх предыдущего
 
       - name: upload
         uses: actions/upload-pages-artifact@v3
         with:
+          name: pages-artifact  # Явно указываем имя для последующего скачивания
           path: docs/.vitepress/dist
 
   deploy:
@@ -42,6 +50,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Doc to GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
