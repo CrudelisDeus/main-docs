@@ -54,6 +54,8 @@ export default withMermaid(
       sitemap: {
         hostname: 'https://github.com/CrudelisDeus/main-docs'
       },
+      // https://vitepress.dev/ru/reference/default-theme-last-updated
+      lastUpdated: true,
     title: "Notes",
     description: "",
 
